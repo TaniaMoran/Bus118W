@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector ('.navbar_menu');
 const navLogo = document.querySelector('#navbar_logo')
@@ -62,3 +64,6 @@ const hideMobileMenu = () => {
 
 menuLinks.addEventListener('click', hideMobileMenu);
 menuLinks.addEventListener('click', hideMobileMenu);
+
+
+})

@@ -6,15 +6,18 @@
 		<meta charset ="UTF-8">
 		<meta name="viewport"
 		content="width=device-width, initial-scale = 1.0">
+		<meta http-equiv= "X-UA-Compatible" content="ie=edge">
 		<!-- Creating the title for catch-->
 		<title> Catch Website</title>
 		
 
 		<!--Custom CSS File-->
-		<link	rel="stylesheet" href="stylesheet.css" >
+		<link	rel="stylesheet" href="stylesheet3.css" >
 
 	<!--Where we got our font source-->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+		
+	<link rel="stylesheet" href = "bootstrap.min.css" >
 	</head>
 	<body>
 
@@ -25,16 +28,36 @@
     home page and other options to facilitate our page-->
 	<nav class = "navbar">
 		<div class="navbar_container">
-			<a href = "project2.html" id="navbar_logo"> <i class="fas fa-car">
+			<a href = "project3.html" id="navbar_logo"> <i class="fas fa-car">
 			</i> CATCH</a>
 			<div class = "nav_toggle" id = "mobile-menu">
-				<span class = "bar"></span>
-				<span class = "bar"></span>
-				<span class = "bar"></span>
 			</div>
 			<ul class = "navbar_menu">
 				<li class = "navbar_item">
-				<a href = "/project2.html" class = "navbar_links"
+				<a href = "/project3.html" class = "navbar_links"
+				id = "home-page">Home</a>
+			</li>
+			<li class = "navbar_item">
+				<a href = "About.html" class = "navbar_links"
+				id = "about-page">About</a>
+			</li>
+			<li class = "navbar_item">
+				<a href = "#Rider" class = "navbar_links"
+				id = "rider-page">Rider</a>
+			</li>
+			<li class = "navbar_item">
+				<a href = "#Driver" class = "navbar_links"
+				id = "driver-page">Driver</a>
+			</li>
+			<li class = "navbar_btn">
+				<a href = "#signup" class = "button"
+				id = "signup">Sign Up</a>
+			</li>
+			</ul>
+		</div>
+		<div class = "collapse navbar-collapse" id="navbarId">
+			<li class = "navbar_item">
+				<a href = "/project3.html" class = "navbar_links"
 				id = "home-page">Home</a>
 			</li>
 			<li class = "navbar_item">
@@ -60,14 +83,11 @@
 	<!-- Hero Section-->
 	<div class="hero" id="home">
 		<div class="hero_container">
-			<h1 class="hero_heading">Catch a Ride <span> Today </span></h1>
-			<p class = "hero_description" style="font-size: 40pt; color: #338674;"> Best New Ride Sharing App </p>
+			<h1 class="hero_heading" style="color: #fff;">Catch a Ride <span>Today</span></h1>
+			<p class = "hero_description" style="font-size: 40pt; color: #6bc0ae; font-weight: bolder;"> Best New Ride Sharing App </p>
 			<button class = "main_btn"><a href = "catchride.html">Catch a Ride</a></button>
 			
 			
-			<script type = "text/javascript" 
-			src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
-		 </script>
 		 
 		</div>
 		</div>
@@ -158,17 +178,26 @@
 						<a href = "/FAQ">FAQ</a>
 						<a href = "/Feedback">Feedback</a>
 				</div>
+				<div class="footer_link--wrapper"></div>
+				<div class="footer_link--items">
+					<h2>Created by:</h2>
+					<a href = "#">Leila Nakasone</a>
+					<a href = "#">Tania Moran Hernandez</a>
+					<a href = "#">Mridul Jammalamadaka</a>
+					<a href = "#">Justin Nguyen</a>
+					</div>
+			</div>
 			</div>
 		</div>
 		<!-- Shows the logo from the original code from the top to the bottom-->
 		<section class = "social_media">
 			<div class="social_media--wrap">
 				<div class="footer_logo">
-					<a href ="project2.html" id = "footer_logo"> <i class="fas fa-car">
+					<a href ="project2.html" id = "footer_logo" style="color:  #0e8f21;"> <i class="fas fa-car">
 					</i>CATCH</a>
 				</div>
 				<!-- It shows the social media Icons and it redirects the users to their designated icons-->
-				<p class = "website_rights">© CATCH 2021. All rights reserved</p>
+				<p class = "website_rights" style="color: black;">© CATCH 2021. All rights reserved</p>
 				<div class="social_icons">
 				<a href = "https://www.facebook.com/" id = "social_icon--link" target = "_blank">
 					<i class = "fab fa-facebook"></i></a>
@@ -182,12 +211,15 @@
 	</div>
 
 
-<!-- Custom Google CDN JQuery-->
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
- 
-<!-- Custom JS flie link-->
+<!-- Development version -->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<script src="jquery-3.1.1.min.js"></script>
+
+
+<!--JS-->
+<script src = "bootstrap.min.js"></script>
+
+<!-- Custom JS flie-->
 <script src = "apps.js"></script>
 	
 	</body>

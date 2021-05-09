@@ -4,26 +4,19 @@ $(document).ready(function(){
         if (scroll >=50){
             $("sticky").addClass("stickyadd");
         }else{
-            $("sticky").removeClass("stickyadd");
-        }
-    })
+            $("sticky").removeClass("stickyadd");}})
 
     const menu = document.querySelector('#mobile-menu');
     const menuLinks = document.querySelector ('.navbar_menu');
     const navLogo = document.querySelector('#navbar_logo')
     
-    
-    
-    
     // Displayed the mobile menu//
     
     const mobileMenu = () => {
         menu.classList.toggle('is-active');
-        menuLinks.classList.toggle('active');
-    };
+        menuLinks.classList.toggle('active');};
     
     menu.addEventListener('click', mobileMenu);
-    
     
     // It is going to show whenever the user scrolls (menu)
     
@@ -48,17 +41,13 @@ $(document).ready(function(){
         } else if (window.innerWidth > 960 && scrollPos < 2345){
             aboutMenu.classList.add('highlight');
             homeMenu.classList.remove('highlight');
-            return
-    }
+            return}
     
         if((elem && window.innerWidth < 960 && scrollPos < 600) || elem){
-            elem.classList.remove('highlight');
-        }
-    };
+            elem.classList.remove('highlight');} };
     
     window.addEventListener('scroll', highlightMenu);
     window.addEventListener('click', highlightMenu);
-    
     
     // Close mobile Menu when you have to click on the item of the CATCH menu
     
@@ -66,12 +55,8 @@ $(document).ready(function(){
         const menuBars = document.querySelector('.is-active');
         if(window.innerWidth <= 768 && menuBars) {
             menu.classList.toggle('is-active');
-            menuLinks.classList.remove('active');
-        }
-    };
+            menuLinks.classList.remove('active'); } };
     
     menuLinks.addEventListener('click', hideMobileMenu);
-    menuLinks.addEventListener('click', hideMobileMenu);
+    menuLinks.addEventListener('click', hideMobileMenu);}) 
     
-    
-    })

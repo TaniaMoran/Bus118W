@@ -241,12 +241,6 @@
 .hero{
     background: #e7e5e5;
     background: linear-gradient( to right, #e7e5e5, #f5f2f2);
-    padding: 200px 0;
-    background-image: url('drive.jpg') ;
-    opacity: 0.5;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
 }
 
 
@@ -314,8 +308,6 @@
 
 }
 
-
-/* About Section of Catch*/
 
 .main{
     background-color:  #e7e5e5;

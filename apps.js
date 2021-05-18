@@ -11,7 +11,6 @@ $(document).ready(function(){
     const navLogo = document.querySelector('#navbar_logo')
     
     // Displayed the mobile menu//
-    
     const mobileMenu = () => {
         menu.classList.toggle('is-active');
         menuLinks.classList.toggle('active');};
